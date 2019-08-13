@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<?import javafx.scene.layout.GridPane?>
+<GridPane alignment="CENTER" hgap="10.0" vgap="10.0"
+          xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8.0.172-ea"
+          fx:controller="sample.Controller">
+    <TableView fx:id="tableUsers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+               prefHeight="400.0"
+               prefWidth="800.0">
+        <columns>
+            <TableColumn prefWidth="200.0" fx:id="user" text="Name"/>
+            <TableColumn minWidth="0.0" prefWidth="200.0" text="Country" fx:id="country"/>
+            <TableColumn minWidth="0.0" prefWidth="200.0" text="Reason" fx:id="reason"/>
+            <TableColumn minWidth="0.0" prefWidth="200.0" text="Comment" fx:id="comment"/>
+        </columns>
+    </TableView>
+</GridPane>
