@@ -1,12 +1,13 @@
 package sample.model;
 
-import javafx.collections.ObservableList;
+import retrofit.http.GET;
 import sample.Entity.UserReason;
+import retrofit.Call;
 
 import java.util.List;
-import java.util.Observable;
 
 public interface DataApi {
 
-    ObservableList<UserReason> getReasonsList();
+    @GET("reasons.json")
+    Call<List<UserReason>> getReasonsList();
 }
